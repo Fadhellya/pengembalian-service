@@ -18,15 +18,14 @@ import lombok.NoArgsConstructor;
  */
 @Entity
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 public class Pengembalian {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long kembaliId;
-    private Long pinjamId;
-    private Integer tgldikembalikan;
-    private Integer terlambat;
-    private Double denda;
-    
+    private Long pengembalianId;
+    private Long peminjamanId;
+    private String tglDikembalikan;
+    private int terlambat;
+    private double denda;
 }
